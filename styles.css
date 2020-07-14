@@ -437,7 +437,7 @@ li {
 }
 
 /* Take off the before after jazz when the media query is a mobile device */
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
   .timeline .date::before,
   .timeline .date::after {
     position: static;
@@ -445,7 +445,7 @@ li {
     border: none;
     box-shadow: none;
   }
-}
+} */
 
 /* ============================= End timeline ============================= */
 
@@ -477,6 +477,7 @@ input[type="submit"] {
   width: initial;
   background-color: #fd57bf;
   color: #eee;
+  font-size: 1.2rem;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -556,4 +557,122 @@ input[type="submit"]:hover {
 /* ============================= End animations ============================= */
 
 /* ============================= Start media queries ============================= */
+@media screen and (max-width: 768px) {
+  body {
+    background: url("images/sitebg2.jpg") no no-repeat center fixed;
+    background-size: cover;
+  }
+
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+
+  .landing-text h6 {
+    font-size: 1.7rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 2rem 0;
+  }
+
+  .nav-link {
+    font-size: 4.5rem;
+  }
+
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+
+  .about-details .nav-list {
+    flex-direction: initial;
+  }
+
+  .about-details li {
+    margin: 0 2rem;
+  }
+
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .icon-container i {
+    font-size: 4rem;
+  }
+
+  .timeline {
+    margin-right: 1rem;
+  }
+
+  .timeline ul {
+    margin: 0 0 0 auto;
+    padding: 1rem;
+  }
+
+  .timeline .date:before {
+    left: -15rem;
+  }
+
+  .timeline .date:after {
+    left: -1.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+
+  .landing-text h6 {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .portfolio-description h6 {
+    margin-top: 1rem;
+  }
+
+  .timeline p {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .timeline.date: before {
+    font-size: 1.4rem;
+  }
+}
 /* ============================= End media queries ============================= */

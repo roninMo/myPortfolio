@@ -6,28 +6,20 @@ $(document).ready(function () {
   });
 
   //   The navbar links to different parts of the page
-  $(".a-t").on("click", function () {
-    $(".menu-toggler").toggleClass("open");
-    $(".top-nav").toggleClass("open");
+  $(".top-nav .nav-link").on("click", function () {
+    $(".menu-toggler").removeClass("open");
+    $(".top-nav").removeClass("open");
   });
 
-  $(".s-t").on("click", function () {
-    $(".menu-toggler").toggleClass("open");
-    $(".top-nav").toggleClass("open");
-  });
+  // $('nav a[href*="#"]').on('click', function() {
+  //   $('html, body').animate( keyframes: {
+  //     scrollTop: $($(this).attr('href')).offset().top - 100
+  //   }, options: 2000);
+  // });
 
-  $(".p-t").on("click", function () {
-    $(".menu-toggler").toggleClass("open");
-    $(".top-nav").toggleClass("open");
-  });
-
-  $(".e-t").on("click", function () {
-    $(".menu-toggler").toggleClass("open");
-    $(".top-nav").toggleClass("open");
-  });
-
-  $(".c-t").on("click", function () {
-    $(".menu-toggler").toggleClass("open");
-    $(".top-nav").toggleClass("open");
+  AOS.init({
+    easing: "ease",
+    duration: 1800,
+    once: true,
   });
 });
