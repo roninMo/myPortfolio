@@ -671,7 +671,7 @@ input[type="submit"]:hover {
     padding: 1rem;
   }
 
-  .timeline.date: before {
+  .timeline .date:before {
     font-size: 1.4rem;
   }
 }
