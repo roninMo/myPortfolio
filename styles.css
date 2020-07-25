@@ -349,9 +349,12 @@ li {
   opacity: 0.4;
 }
 
-.portfolio-description .cta {
-  display: inline-block;
+.portfolio-description .ctab {
   margin-top: 2.5rem;
+}
+
+.portfolio-description .cta {
+  display: block;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #3883ff;
