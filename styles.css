@@ -31,6 +31,13 @@ p {
 img {
   width: 100%;
 }
+
+b {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  color: #00acee;
+}
 /* ============================= End global ============================= */
 
 /*Start reusable content*/
