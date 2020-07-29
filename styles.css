@@ -554,6 +554,17 @@ input[type="submit"]:hover {
   transition: color 650ms;
 }
 
+.resume {
+  color: #2f67cd;
+  transition: color 340ms;
+}
+.resumse:hover {
+  color: #3883ff;
+}
+h5 a:hover {
+  text-decoration: none;
+}
+
 /* ============================= End footer ============================= */
 
 /* ============================= Start animations ============================= */
